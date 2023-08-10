@@ -59,6 +59,12 @@ namespace TechDesignTestProject
             }
         }
 
+        public float TrackerBot()
+        {
+            
+            return Mathf.Round((_endPoint.position - _bot.transform.position).sqrMagnitude);    
+        }
+
 
     }
 
