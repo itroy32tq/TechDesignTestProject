@@ -42,10 +42,12 @@ namespace TechDesignTestProject
                 float sqrMagnitude = desVelocity.sqrMagnitude;
 
                 if (sqrMagnitude <= 1) 
-                { 
-                    _endPoint = _startPoint;
+                {
+                    Transform buffer = _startPoint;
                     _startPoint = _endPoint;
+                    _endPoint = buffer;
                     _bot.transform.LookAt(_endPoint);
+                    yield return null;
                     continue;
                 }
 
