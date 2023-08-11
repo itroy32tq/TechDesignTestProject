@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace TechDesignTestProject
 {
@@ -15,6 +17,13 @@ namespace TechDesignTestProject
         [SerializeField]
         private Animator _animator;
 
+        [SerializeField]
+        private Button _changeScaneButton;
+
+        private void Start()
+        {
+            _changeScaneButton.onClick.AddListener(OnChangeSceneButton);
+        }
         private void Update()
         {
             float value = _gameManager.TrackerBot();
@@ -22,6 +31,11 @@ namespace TechDesignTestProject
             else _animator.ResetTrigger("FontSize");
             _text.text = value.ToString();
        
+        }
+
+        public void OnChangeSceneButton()
+        {
+            SceneManager.LoadScene("second_test_scene");
         }
     }
 }
