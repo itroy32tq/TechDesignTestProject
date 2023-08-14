@@ -1,6 +1,6 @@
 - ссылка на github c репозиторием проекта - https://github.com/itroy32tq/TechDesignTestProject
 - скриншот из git клента будет в архиве с билдом (git_history.jpg)
-- ссылка на архив с бидом - https://drive.google.com/file/d/1392dHcx2HDBNzdxAb4GlnLRY5ncITRKa/view?usp=sharing
+- ссылка на архив с бидом - https://drive.google.com/file/d/1ob9__y4Vba3daCR2zrtBqMoEMOVWYLYY/view?usp=drive_link
 
 Источники:
 ассеты уровня и моделек человечка из Asset Stor:
