@@ -1,8 +1,5 @@
 using Spine.Unity;
-using Spine.Unity.Examples;
 using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,7 +7,6 @@ namespace TechDesignTestProject
 {
     public class SpineRaptorComponent : MonoBehaviour, IPointerClickHandler
     {
-        private Animator _anmator;
         private SkeletonAnimation skeletonAnimation;
         private bool isStopCoriutine = true;
 
@@ -22,7 +18,6 @@ namespace TechDesignTestProject
 
         private void Start()
         {
-            _anmator = GetComponent<Animator>();
             skeletonAnimation = GetComponent<SkeletonAnimation>();
             StartCoroutine(GunGrabRoutine());
             

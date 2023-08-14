@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,7 +10,6 @@ namespace TechDesignTestProject
         private void Start()
         {
             _animator = GetComponent<Animator>();
-            _animator.SetTrigger("start_trigger");
         }
         public void OnPointerClick(PointerEventData eventData)
         {
